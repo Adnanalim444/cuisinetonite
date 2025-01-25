@@ -1,0 +1,642 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--====== USEFULL META ======-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== TITLE TAG ======-->
+    <title>Cuisine Tonite</title>
+
+    <!--====== FAVICON ICON =======-->
+    <link rel="shortcut icon" href="img/logo-w.png" />
+    <!--====== STYLESHEETS =======-->
+    <link rel="stylesheet" href="html/owl/demo/css/normalize.css">
+    <link rel="stylesheet" href="html/owl/demo/css/animate.css">
+    <link rel="stylesheet" href="html/owl/demo/css/pogo-slider.css">
+    <link rel="stylesheet" href="html/owl/demo/css/owl.carousel.css">
+    <link rel="stylesheet" href="html/owl/demo/css/datepicker.css">
+    <link rel="stylesheet" href="html/owl/demo/css/timepicker.min.css">
+    <link rel="stylesheet" href="html/owl/demo/css/magnific-popup.css">
+    <link href="html/owl/demo/css/bootstrap.min.css" rel="stylesheet">
+    <link href="html/owl/demo/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--====== MAIN STYLESHEETS ======-->
+    <link href="html/owl/demo/style.css" rel="stylesheet">
+    <link href="html/owl/demo/css/responsive.css" rel="stylesheet">
+    <script src="html/owl/demo/js/vendor/modernizr-2.8.3.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <style type="text/css">
+        .call-to-action {
+            text-transform: lowercase;
+        }
+
+        .navbar-brand {
+            padding: 0px 15px;
+        }
+
+        .is-sticky ul#nav li a {
+            padding: 38px 20px;
+            color: #1a1a1a;
+        }
+
+        .high {
+            background: #FEC610 !important;
+            padding: 8px 20px !important;
+            margin-top: 31px;
+        }
+
+        .high:hover {
+            color: white !important;
+        }
+
+        .head {
+            padding-bottom: 0px !important;
+        }
+
+        .food-menu-list-menu ul {
+            display: none;
+        }
+
+        /* width */
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+
+        ::-webkit-scrollbar-thumb {
+            background: #FEC610;
+        }
+
+        /* Handle on hover */
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .logow {
+            width: 92px;
+        }
+
+        .feedback1 {
+            background-color: #FEC610 !important;
+            bottom: -2px;
+            width: 100%;
+            position: fixed;
+            color: #fff;
+            padding: 8px 10px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            z-index: 99999999;
+            border: 1px solid #fff;
+            height: 40px;
+            letter-spacing: 2px;
+            left: 0;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .feedback1 {
+            display: none;
+        }
+
+        @media (max-width: 767px) {
+            .feedback1 {
+                display: block;
+            }
+        }
+
+        .footer-copyright {
+            text-align: center;
+        }
+
+        .quick ul li {
+            display: block !important;
+            padding: 5px;
+        }
+
+        .footer-top {
+            border-bottom: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .top-bar {
+                border-bottom: none;
+            }
+            .logow {
+                width: 72px;
+            }
+            .footer-top {
+                border-bottom: 1px solid #2B2C2D;
+            }
+            .ulleft {
+                text-align: left !important;
+            }
+            .mobbg {
+                background: #313537;
+            }
+        }
+
+        .spa {
+            padding-bottom: 10px !important;
+        }
+
+        .quick ul li a {
+            width: 100px;
+            font-size: 18px;
+            text-align: left !important;
+        }
+
+        .tmt {
+            padding-top: 5px;
+        }
+
+        .headb {
+            font-family: 'Fredericka the Great', cursive !important;
+            color: #212529 !important;
+        }
+
+        .ordbtn {
+            background-color: #FEC610;
+            border: none;
+            color: #000;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 10px 30px;
+            text-transform: uppercase;
+        }
+
+        .pop {
+            font-family: 'Poppins', sans-serif !important;
+            font-weight: bold !important;
+        }
+
+        .ada ul,
+        .footer-menu ul {
+            text-align: left;
+        }
+
+        img.logow.logos {
+            width: 70px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!--- PRELOADER -->
+    <div class="preeloader">
+        <div class="preloader-spinner"><i class="fa fa-cutlery"></i></div>
+    </div>
+    <!--SCROLL TO TOP-->
+    <a href="#home" class="scrolltotop"><i class="fa fa-long-arrow-up"></i></a>
+    <!--START TOP AREA-->
+    <header class="top-area" id="home">
+        <div class="header-top-area">
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row mobbg">
+                        <div class="col-md-7 col-lg-6 col-sm-8">
+                            <div class="call-to-action">
+                                <p><i class="fa fa-envelope-o"></i>Email: <a href="/cdn-cgi/l/email-protection#5437213d273d3a31203b3a3d2031143339353d387a373b39"><span class="__cf_email__" data-cfemail="96f5e3ffe5fff8f3e2f9f8ffe2f3d6f1fbf7fffab8f5f9fb">[email&#160;protected]</span></a></p>
+                                <p>Whatsapp: <a href="https://wa.link/b08vfl" target="_blank">0321 825 9487</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-6 col-sm-4">
+                            <!--<div class="book-table-popup">-->
+                            <!--    <a href="https://order.cuisinetonite.com/" target="_blank">Order Online</a>-->
+                            <!--</div>-->
+                            <div class="top-social-bookmark">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100088952295956&mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/cuisine_tonite/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--MAINMENU AREA-->
+            <div class="mainmenu-area" id="mainmenu-area">
+                <div class="mainmenu-area-bg"></div>
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="index.html" class="navbar-brand tmt"><img src="img/cuisinelogo.png" class="logow logos" alt="logo"></a>
+                            <a href="index.html" class="navbar-brand white"><img src="img/cuisinelogow.png" class="logow" alt="logo"></a>
+                        </div>
+                        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+
+                            <ul id="nav" class="nav navbar-nav cl-effect-11">
+                                <li class="active"><a class="at-drop-down" href="#">Home <i class="hidden-md hidden-lg fa fa-angle-down"></i></a>
+
+                                </li>
+                                <li><a href="#about">about us</a></li>
+                                <li><a href="#menu">Events</a></li>
+                                <li><a href="menu.pdf" target="_blank">Menu</a></li>
+                                <li><a href="#reserve">Reservation</a></li>
+
+
+
+                                <li><a href="#footc">Contact</a></li>
+                                <li class="highlight"><a class="high" href="https://order.cuisinetonite.com/">Order Online</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!--END MAINMENU AREA END-->
+        </div>
+        <!--HHOME SLIDER AREA-->
+        <div class="slider-area">
+            <div class="pogoSlider">
+                <div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background:url(html/owl/demo/img/slider/slide_1.jpg) no-repeat scroll 0 0 / cover;">
+                    <h2 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="700">Welcome to</h2>
+                    <h1 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="1500"><span>Cuisine Tonite</h1>
+                    <h3 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="2300"><a href="https://order.cuisinetonite.com/" target="_blank">Order Now</a></h3>
+                </div>
+               <!--  <div class="pogoSlider-slide" data-transition="fade" style="background:url(html/owl/demo/img/slider/slide_2.jpg) no-repeat scroll 0 0 / cover;">
+                    <h2 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="700">Our menus</h2>
+                    <h1 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="1500">See What's <span>in our</span> menu</h1>
+                    <h3 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="2300"><a href="https://order.cuisinetonite.com/" target="_blank">Todays Menu</a></h3>
+                </div> -->
+                <div class="pogoSlider-slide" data-transition="fade" style="background:url(img/hotel.jpg) no-repeat scroll 0 0 / cover;">
+                    <h2 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="700">Get ready</h2>
+                    <h1 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="1500">to <span>Join</span> with us</h1>
+                    <h3 class="pogoSlider-slide-element" data-in="expand" data-out="expand" data-duration="2300"><a href="#reserve">Book A Table</a></h3>
+                </div>
+            </div>
+        </div>
+        <!--HOME SLIDER AREA END-->
+    </header>
+    <!--END TOP AREA-->
+    <!--ABOUT AREA-->
+    <section id="about" class="about-area section-padding">
+        <div class="container wow fadeIn">
+            <div class="row">
+                <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
+                    <div class="area-title">
+                        <h2>About Us</h2>
+                    </div>
+                    <div class="about-content">
+                        <p>The restaurant opened in an effort to provide food with a unique narrative. A pleasant environment scene is combined with a delectable cuisine menu to create unforgettable moments here!</p>
+                        <a href="https://order.cuisinetonite.com/" target="_blank" class="read-more">Order Online</a>
+                    </div>
+                </div>
+                <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                            <div class="about-img">
+                                <img src="img/about3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                            <div class="about-img">
+                                <img src="img/page1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--PROMOTIONS AREA END-->
+    <!--MENUS AREA-->
+    <section class="menus-area section-padding head" id="menu">
+        <div class="container wow fadeIn">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <div class="area-title text-center">
+                        <h2>Gallery</h2>
+                        <h3>Our events</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <div class="food-menu-list-menu">
+                        <ul>
+                            <li class="filter active" data-filter="all">All</li>
+                            <li class="filter" data-filter=".mocktails">Mocktails</li>
+                            <li class="filter" data-filter=".burger">Burger</li>
+                            <li class="filter" data-filter=".chinese">Chinese</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row food-menu-list">
+                <div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu mocktails">
+                    <div class="food-menu-img">
+                        <a href="img/image5.jpeg" class="menu-popup" data-effect="mfp-zoom-out"><img src="img/image5.jpeg" alt=""></a>
+                    </div>
+                    <div class="food-menu-details">
+                        <!--<h4 class="pop">White Colada</h4>-->
+                        <!--<a href="https://order.cuisinetonite.com/" target="_blank">  <p class="menu-price ordbtn"> Order Online</p></a>-->
+                    </div>
+                </div>
+                <div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu mocktails">
+                    <div class="food-menu-img">
+                        <a href="img/image1.jpg" class="menu-popup" data-effect="mfp-zoom-out"><img src="img/image1.jpg" alt=""></a>
+                    </div>
+                    <div class="food-menu-details">
+                        <!-- <h4 class="pop">Blue Colada</h4>-->
+                        <!--<a href="https://order.cuisinetonite.com/" target="_blank">   <p class="menu-price ordbtn">Order Online</p></a>-->
+                    </div>
+                </div>
+                <div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu mocktails">
+                    <div class="food-menu-img">
+                        <a href="img/image3.jpeg" class="menu-popup" data-effect="mfp-zoom-out"><img src="img/image3.jpeg" alt=""></a>
+                    </div>
+                    <div class="food-menu-details">
+                        <!--<h4 class="pop">Mint Margarita</h4>-->
+                        <!--<a href="https://order.cuisinetonite.com/" target="_blank"> <p class="menu-price ordbtn"> Order Online</p></a>-->
+                    </div>
+                </div>
+                <div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu mocktails">
+                    <div class="food-menu-img">
+                        <a href="img/image4.jpeg" class="menu-popup" data-effect="mfp-zoom-out"><img src="img/image4.jpeg" alt=""></a>
+                    </div>
+                    <div class="food-menu-details">
+                        <!--                        <h4 class="pop">Strawberry Colada</h4>-->
+                        <!--<a href="https://order.cuisinetonite.com/" target="_blank"><p class="menu-price ordbtn"> Order Online</p></a>-->
+                    </div>
+                </div>
+                <!--<div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu burger">-->
+                <!--    <div class="food-menu-img">-->
+                <!--        <a href="img/beef-burger.jpg" class="menu-popup" data-effect="mfp-zoom-out"><img src="img/beef-burger.jpg" alt=""></a>-->
+                <!--    </div>-->
+                <!--    <div class="food-menu-details">-->
+                <!--        <h4 class="pop">Beef Burger</h4>-->
+                <!--      <a href="https://order.cuisinetonite.com/" target="_blank">  <p class="menu-price ordbtn"> Order Online</p></a>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu burger">-->
+                <!--    <div class="food-menu-img">-->
+                <!--        <a href="img/cheese-burger.jpg" class="menu-popup" data-effect="mfp-zoom-out"><img src="img/cheese-burger.jpg" alt=""></a>-->
+                <!--    </div>-->
+                <!--    <div class="food-menu-details">-->
+                <!--        <h4 class="pop">Cheese Burger</h4>-->
+                <!--     <a href="https://order.cuisinetonite.com/" target="_blank">   <p class="menu-price ordbtn"> Order Online</p></a>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu burger">-->
+                <!--    <div class="food-menu-img">-->
+                <!--        <a href="img/chicken-jalapeno-burger.jpg" class="menu-popup" data-effect="mfp-zoom-out"><img src="img/chicken-jalapeno-burger.jpg" alt=""></a>-->
+                <!--    </div>-->
+                <!--    <div class="food-menu-details">-->
+                <!--        <h4 class="pop">Chicken Burger</h4>-->
+                <!--        <a href="https://order.cuisinetonite.com/" target="_blank"><p class="menu-price ordbtn"> Order Online</p></a>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu burger">-->
+                <!--    <div class="food-menu-img">-->
+                <!--        <a href="img/zinger-burger.jpg" class="menu-popup" data-effect="mfp-zoom-out"><img src="img/zinger-burger.jpg" alt=""></a>-->
+                <!--    </div>-->
+                <!--    <div class="food-menu-details">-->
+                <!--        <h4 class="pop">Zinger Burger</h4>-->
+                <!--     <a href="https://order.cuisinetonite.com/" target="_blank">    <p class="menu-price ordbtn">Order Online</p></a>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--  <div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu chinese">-->
+                <!--    <div class="food-menu-img">-->
+                <!--        <a href="img/chicken-fried-rice.jpg" class="menu-popup" data-effect="mfp-zoom-out"><img src="img/chicken-fried-rice.jpg" alt=""></a>-->
+                <!--    </div>-->
+                <!--    <div class="food-menu-details">-->
+                <!--        <h4 class="pop">Chicken Fried Rice</h4>-->
+                <!--       <a href="https://order.cuisinetonite.com/" target="_blank"> <p class="menu-price ordbtn"> Order Online</p></a>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu chinese">-->
+                <!--    <div class="food-menu-img">-->
+                <!--        <a href="img/chicken-manchorian.jpg" class="menu-popup" data-effect="mfp-zoom-out"><img src="img/chicken-manchorian.jpg" alt=""></a>-->
+                <!--    </div>-->
+                <!--    <div class="food-menu-details">-->
+                <!--        <h4 class="pop">Chicken Manchurian</h4>-->
+                <!--       <a href="https://order.cuisinetonite.com/" target="_blank"> <p class="menu-price ordbtn"> Order Online</p></a>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!-- <div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu chinese">-->
+                <!--    <div class="food-menu-img">-->
+                <!--        <a href="img/vegetable-chowmein.jpg" class="menu-popup" data-effect="mfp-zoom-out"><img src="img/vegetable-chowmein.jpg" alt=""></a>-->
+                <!--    </div>-->
+                <!--    <div class="food-menu-details">-->
+                <!--        <h4 class="pop">Vegetable Chowmein</h4>-->
+                <!--       <a href="https://order.cuisinetonite.com/" target="_blank"> <p class="menu-price ordbtn"> Order Online</p></a>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--  <div class="mix col-md-3 col-lg-3 col-sm-6 col-xs-12 single-menu chinese">-->
+                <!--    <div class="food-menu-img">-->
+                <!--        <a href="img/cream-pasta.jpg" class="menu-popup" data-effect="mfp-zoom-out"><img src="img/cream-pasta.jpg" alt=""></a>-->
+                <!--    </div>-->
+                <!--    <div class="food-menu-details">-->
+                <!--        <h4 class="pop">Cream Pasta</h4>-->
+                <!--       <a href="https://order.cuisinetonite.com/" target="_blank">  <p class="menu-price ordbtn">Order Online</p></a>-->
+                <!--    </div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </section>
+
+
+    <section id="reserve" class="reservation-area section-padding">
+        <div class="container wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="area-title text-center">
+                        <h2>reservation</h2>
+                        <h3>EVENT/TABLE RESERVATION FORM</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 col-sm-12 col-xs-12">
+                    <form class="main-reservaton-form" action="process-form.php" method="post">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                <label for="reservation_name"><i class="fa fa-user-o"></i></label>
+                                <input type="text" name="reservation_name" id="reservation_name" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                <label for="reservation_email"><i class="fa fa-envelope-o"></i></label>
+                                <input type="email" name="reservation_email" id="reservation_email" placeholder="Your Email">
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                <label for="reservation_date"><i class="fa fa-calendar"></i></label>
+                                <input type="text" name="reservation_date" id="reservation_date" placeholder="Expected Date" data-select="datepicker">
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                <label for="reservation_time"><i class="fa fa-clock-o"></i></label>
+                                <input type="text" name="reservation_time" id="reservation_time" placeholder="Expected Time">
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                <label for="reservation_person"><i class="fa fa-user-plus"></i></label>
+                                <input type="text" name="reservation_person" id="reservation_person" placeholder="Total Person">
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                <label for="reservation_phone"><i class="fa fa-phone"></i></label>
+                                <input type="text" name="reservation_phone" id="reservation_phone" placeholder="Phone No">
+                            </div>
+                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                <label for="reservation_message"><i class="fa fa-comment-o"></i></label>
+                                <textarea name="reservation_message" id="reservation_message" cols="30" rows="10"></textarea>
+                            </div>
+                            <input type="hidden" name="appsform" value="1" />
+                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
+                                <button type="submit">BOOK MY RESERVATION</button>
+                                <p>Please submit your reservation detail &amp; We'll contact you to confirm your booking</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--     <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="reservation-call-to-action">
+                        <h4>Reserve by Phone</h4>
+                        <p>We take reservations for lunch and dinner. To make a reservation, please call us at <a href="#">(080)-1234-678</a> between 09am-7pm, Monday to Friday.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="reservation-private-text">
+                        <h4>Private Parties &amp; Events</h4>
+                        <p>We are honored to serve you a special day, great in your life such as birthday parties, weddings, conferences or meeting friends. If the size of the party, the event over 15 wheels, please let us know soon.
+                    </p></div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+
+
+    <a href="https://order.cuisinetonite.com/" target="_blank" class="btn btn-primary feedback1">ORDER ONLINE</a>
+    <!--INSTAGRAM FEED END-->
+    <!--FOOER AREA-->
+    <div id="footc" class="footer-area">
+        <div class="container wow fadeIn">
+            <div class="row">
+                <div class="col-md-12 col-lg-4 col-sm-12 col-xs-12">
+                    <div class="footer-top section-padding ">
+                        <div class="footer-logo">
+                            <a href="#"><img src="img/footlogo.png" alt=""></a>
+                        </div>
+                        <div class="footer-address">
+                            <p><b>Address:</b> Suit No B 35 Architect Co Operative Housing Society Gulistan e Jouhar Block 8 Karachi</p>
+                            <p><b>Email:</b> <a href="/cdn-cgi/l/email-protection#94f7e1fde7fdfaf1e0fbfafde0f1d4f3f9f5fdf8baf7fbf9"><span class="__cf_email__" data-cfemail="5c3f29352f3532392833323528391c3b313d3530723f3331">[email&#160;protected]</span></a></p>
+                            <p><b>Phone:</b> <a href="https://wa.link/b08vfl" target="_blank">0321 825 9487</a></p>
+                        </div>
+                        <!--  <div class="footer-address">
+                            <h3>Social Media Links</h3>
+                        </div>
+                         <div class="footer-social-bookmark ada">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div> -->
+
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 col-sm-12 col-xs-12">
+                    <div class="footer-top section-padding text-center">
+
+                        <div class="footer-address">
+                            <h3 class="ulleft">Quick Links</h3>
+
+                        </div>
+                        <div class="footer-social-bookmark quick">
+                            <ul class="ulleft">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#menu">Menu</a></li>
+                                <li><a href="#reserve">Reservation</a></li>
+                                <li><a href="https://wa.link/b08vfl" target="_blank">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 col-sm-12 col-xs-12">
+                    <div class="footer-address">
+                        <div class="section-padding text-center spa">
+
+                            <h3>Visit Us</h3>
+                        </div>
+                        <div class="footer-top text-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.1245529568628!2d67.1553692!3d24.9278265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3398c783462ab%3A0xf23a605ff7e3157b!2sCuisine%20Tonite!5e0!3m2!1sen!2s!4v1687516276760!5m2!1sen!2s"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <div class="footer-copyright text-center">
+                        <p>&copy; 2023 <a href="#">Cuisine Tonite</a> All Right Reserved. Powered by <a href="https://indolj.pk/" target="_blank">Indolj.pk</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOER AREA END-->
+    <!--====== SCRIPTS JS ======-->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="html/owl/demo/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="html/owl/demo/js/vendor/bootstrap.min.js"></script>
+    <!--====== PLUGINS JS ======-->
+    <script src="html/owl/demo/js/vendor/jquery.easing.1.3.js"></script>
+    <script src="html/owl/demo/js/vendor/jquery-migrate-1.2.1.min.js"></script>
+    <script src="html/owl/demo/js/jquery.pogo-slider.js"></script>
+    <script src="html/owl/demo/js/owl.carousel.min.js"></script>
+    <script src="html/owl/demo/js/jquery.mixitup.min.js"></script>
+    <script src="html/owl/demo/js/spectragram.js"></script>
+    <script src="html/owl/demo/js/jquery.magnific-popup.min.js"></script>
+    <script src="html/owl/demo/js/datepicker.min.js"></script>
+    <script src="html/owl/demo/js/timepicker.min.js"></script>
+    <script src="html/owl/demo/js/waypoints.min.js"></script>
+    <script src="html/owl/demo/js/jquery.counterup.min.js"></script>
+    <script src="html/owl/demo/js/wow.min.js"></script>
+    <script src="html/owl/demo/js/contact-form.js"></script>
+    <script src="html/owl/demo/js/jquery.sticky.js"></script>
+    <!--===== ACTIVE JS=====-->
+    <script src="html/owl/demo/js/main.js"></script>
+</body>
+
+</html>
